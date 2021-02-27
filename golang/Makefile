@@ -1,6 +1,7 @@
 PACKAGE_ROOT := github.com/glassmonkey/flutter_with_golang/golang/pkg
 PACKAGE := compute
 EXPORT_NAME := $(shell echo $(PACKAGE) | tr '[:lower:]' '[:upper:]')
+ANDROID_NDK_VERSION= 22.0.7026061
 .DEFAULT_GOAL := help
 .PHONY: test  build-ios  build-android build help
 
@@ -12,8 +13,7 @@ build-ios: ## build go files for ios
 	$(MAKE) build OS=ios EXPORT_NAME=$(EXPORT_NAME).framework
 
 build-android: ## build go files for android
-	#cp -r ~/Library/Android/sdk/ndk/22.0.7026061 ~/Library/Android/sdk/ndk-bundle
-	ANDROID_NDK_HOME=~/Library/Android/sdk/ndk-bundle \
+	ANDROID_NDK_HOME=~/Library/Android/sdk/ndk/$(ANDROID_NDK_VERSION) \
 	$(MAKE) build OS=android EXPORT_NAME=$(EXPORT_NAME).aar
 
 build:
