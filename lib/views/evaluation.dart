@@ -21,7 +21,8 @@ class EvalWidget extends HookWidget {
             TextField(
               controller: textController,
             ),
-            Text('result: ${messageState.text}'),
+            Text(messageState.text,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
           ],
         ),
       ),
@@ -30,7 +31,7 @@ class EvalWidget extends HookWidget {
           messageNotifier.evaluation(textController.text);
         },
         tooltip: 'Culculate',
-        child: Icon(Icons.transit_enterexit_sharp),
+        child: Icon(Icons.done),
       ),
     );
   }
