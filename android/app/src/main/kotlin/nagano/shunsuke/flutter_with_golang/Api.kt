@@ -21,6 +21,5 @@ class Api() : Pigeon.Api {
             response.message = e.toString()
             response
         }
-
     }
 }
