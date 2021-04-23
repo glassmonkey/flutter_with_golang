@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Runner/Pigeon.m">
+   </FileRef>
+   <FileRef
+      location = "group:Runner/Pigeon.h">
+   </FileRef>
+   <FileRef
       location = "group:Runner.xcodeproj">
    </FileRef>
 </Workspace>
