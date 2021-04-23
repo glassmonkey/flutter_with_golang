@@ -24,3 +24,9 @@ pigeon:
 							--java_out $(ANDROID_PIGEON_FILE) \
 							--java_package $(ANDROID_PLUGIN_PACAKGE)\
 							--dart_null_safety
+
+build-android:
+	flutter build apk
+
+build-ios:
+	flutter build ios
