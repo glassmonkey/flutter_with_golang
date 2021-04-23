@@ -1,0 +1,8 @@
+framework module "API" {
+	header "ref.h"
+    header "Api.objc.h"
+    header "Universe.objc.h"
+    header "API.h"
+
+    export *
+}
