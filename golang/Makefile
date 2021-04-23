@@ -1,5 +1,5 @@
-PACKAGE_ROOT := github.com/kyloz/kyloz/golang/pkg
-PACKAGE := example
+PACKAGE_ROOT := github.com/glassmonkey/flutter_with_golang/golang/pkg
+PACKAGE := api
 EXPORT_NAME := $(shell echo $(PACKAGE) | tr '[:lower:]' '[:upper:]')
 ANDROID_NDK_VERSION := 22.0.7026061
 
