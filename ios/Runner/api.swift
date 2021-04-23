@@ -12,6 +12,8 @@ import API
 class Api: FlutterApi {
     func eval(_ input: FlutterRequest, error: AutoreleasingUnsafeMutablePointer<FlutterError?>) -> FlutterResponse? {
         let response = FlutterResponse()
+        response.message = "fake"
+        return response
         var result: Double = 0
         var error: NSError?
         ApiEvaluate(input.expression, &result, &error)
