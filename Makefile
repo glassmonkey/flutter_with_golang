@@ -26,7 +26,7 @@ pigeon:
 							--dart_null_safety
 
 build-android:
-	flutter build apk
+	flutter build apk --release
 
 build-ios:
-	flutter build ios
+	flutter build ios --release
