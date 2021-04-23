@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/glassmonkey/flutter_with_golang/golang/pkg/compute"
+	"github.com/glassmonkey/flutter_with_golang/golang/pkg/api"
 )
 
 func main() {
-	price, _ := compute.Add("123.456", "678.9")
-	fmt.Print(price)
+	r, _ := api.Evaluate("1+1")
+	fmt.Print(r)
 }
