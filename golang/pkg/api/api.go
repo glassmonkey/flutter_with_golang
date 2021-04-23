@@ -7,10 +7,6 @@ import (
 	"github.com/Knetic/govaluate"
 )
 
-func GoCall() (string, error) {
-	return "hello, world by golang", nil
-}
-
 func Evaluate(formula string) (float64, error) {
 	expression, err := govaluate.NewEvaluableExpression(formula)
 	if err != nil {

@@ -19,6 +19,6 @@ class MessageNotifier extends StateNotifier<MessageState> {
     final req = Request();
     req.expression = text;
     final response = await this.client.eval(req);
-    this.state = this.state.copyWith(text: response.message ?? "result");
+    this.state = this.state.copyWith(text: response.message ?? "result ");
   }
 }
